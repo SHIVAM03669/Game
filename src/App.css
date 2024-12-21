@@ -34,10 +34,15 @@ p {
   display: flex;
   position: relative;
   padding: 10px;
-  background: #fff;
+  background: #000000;
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
   overflow: hidden;
+  width: auto;
+  padding-left: 65px;
+  background-image: url(assets/newimg.jpg);
+  background-size: cover; /* Ensures the image covers the entire area */
+  background-position: center; /* Centers the background image */
 }
 
 /* Octave Wrapper for Grouping */
@@ -61,6 +66,7 @@ p {
   position: relative;
   z-index: 1;
   cursor: pointer;
+  
 }
 
 /* Black Keys */
@@ -91,7 +97,7 @@ p {
 
 /* Place the "I" black key between J and L */
 .key.white:nth-of-type(7) + .key.black {
-  left: 309px; /* Adjusted position for "I" between "J" and "L" */
+  left: 308px; /* Adjusted position for "I" between "J" and "L" */
 }
 
 /* Interaction Effects */
